@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <!--here is where your web page starts to load-->
+  <body>
+    <!--here add some links to use the default styles-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- This request the usage of the leaflet library, which is a populat web-mapping library for open-source projects
+    Make sure you put this AFTER Leaflet's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+      integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+      crossorigin=""/>
+    <!--Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+        integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+        crossorigin=""></script>
+    <!--And add this jquery documentation for downloading and parsing data-->
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+
+    <!--Below starts the content of the webpage-->
+    <!--The mapping portal here starts from the top edge of your screen, takes the full width 100%, the height 84%-->
+    <div id="map" style="position: absolute; right:0; top:0; width:80%; height:100%; z-index:20;"></div>
+    <!--We can add the title of your webmap here-->
+    <div class="sidepanel">
+      <h2 id="title"> Change your title here</h2>
+      <p id="description"> Mapping points, polylines, and polygons to an interactive webmap. </p>
+      <!-- this <br> code breaks the line into another line. -->
+      <br>
+      <!-- here we can add two buttons controlling the mapping actions. -->
+      <button class="btn btn-default dropdown-toggle" type="button" id ="mappoints">
+        Points
+      </button>
+      <button class="btn btn-default dropdown-toggle" type="button" id ="mappolylines">
+        Polylines
+      </button>
+      <button class="btn btn-default dropdown-toggle" type="button" id ="mappolygons">
+        Polygons
+      </button>
+      <button class="btn btn-default dropdown-toggle" type="button" id ="reset">
+        Clear Selection
+      </button>
+      <!-- <img id="logo" src="https://preview.ibb.co/i2z8FQ/logo.png"> -->
+    </div>
+
+
+    <!--usually put the request for javascript files here, it controls the operations of the application-->
+    <script src = "js/js.js">
+    </script>
+  </body>
+  <!--the application ends-->
+</html>

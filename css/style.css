@@ -1,0 +1,70 @@
+/*This '#' calls the id of the HTML element you wanna control style for*/
+/*full details of CSS properties is here.*/
+.sidepanel{
+    position:relative;
+    height:100%;
+    width:20%;
+    left:0;
+    top:0;
+    z-index:10;
+}
+
+#title {
+  position:relative;
+  left:2%;
+  top:1%;
+  width:96%;
+  font-size:24px;
+  font-family:Roboto;
+  z-index: 40;
+}
+
+#description {
+  position:relative;
+  width:96%;
+  left:2%;
+  top:5%;
+  font-size:14px;
+  font-family:Roboto;
+  z-index: 40;
+}
+
+#mappoints{
+  position:relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  top:90%;
+  margin:4%;
+  z-index: 40;
+}
+
+#mappolylines{
+  position:relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  top:90%;
+  margin:4%;
+  z-index: 40;
+}
+
+#mappolygons{
+  position:relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  top:90%;
+  margin:4%;
+  z-index: 40;
+}
+
+#reset{
+  position:relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  top:70%;
+  margin:4%;
+  z-index: 40;
+}
